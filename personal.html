@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beyond the research — Xinyu Guan's personal interests, including marathon running.">
+  <title>Xinyu Guan | Personal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__brand">Xinyu Guan</a>
+      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="personal.html" class="active">Personal</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section page-header">
+      <div class="container">
+        <h1>Beyond the Research</h1>
+        <p class="page-header__lead">
+          When I'm not analyzing education data, you'll likely find me on a running trail or exploring a new city.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="personal-feature">
+          <div class="personal-feature__image-wrapper">
+            <img src="assets/images/marathon.jpg"
+                 alt="Xinyu Guan running in the 2025 Chicago Marathon, smiling and flashing a peace sign"
+                 class="personal-feature__image"
+                 loading="lazy">
+          </div>
+          <div class="personal-feature__text">
+            <h2>Marathon Runner</h2>
+            <p>
+              I ran the 2025 Bank of America Chicago Marathon in October 2025. Training for and completing a marathon has taught me about patience, persistence, and the importance of pacing &mdash; lessons that translate naturally to the doctoral journey. There is something deeply satisfying about committing to a goal that demands both daily discipline and long-term vision.
+            </p>
+            <p>
+              Running is also how I recharge. Madison's lakeside trails and arboretum paths provide the perfect counterbalance to hours of data analysis and writing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Other Interests</h2>
+        <div class="hobbies-grid">
+          <div class="hobby-card">
+            <div class="hobby-card__icon" aria-hidden="true">&#127758;</div>
+            <h3>Travel</h3>
+            <p>Having lived in China, Canada, Thailand, and the United States, I've learned that the best way to understand a place is to get lost in it &mdash; preferably with good food nearby.</p>
+          </div>
+          <div class="hobby-card">
+            <div class="hobby-card__icon" aria-hidden="true">&#128218;</div>
+            <h3>Reading</h3>
+            <p>I read education policy papers for work and novels for survival. Sometimes I accidentally cite a fictional character in conversation.</p>
+          </div>
+          <div class="hobby-card">
+            <div class="hobby-card__icon" aria-hidden="true">&#127856;</div>
+            <h3>Baking</h3>
+            <p>Flour, butter, sugar, heat &mdash; feeling like magic. Turns out measuring things precisely is a transferable skill from quantitative research.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__name">Xinyu Guan</p>
+      <p class="footer__affiliation">
+        Ph.D. Candidate, Educational Leadership &amp; Policy Analysis<br>
+        University of Wisconsin-Madison
+      </p>
+      <div class="footer__links">
+        <a href="mailto:xguan36@wisc.edu">Email</a>
+        <a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Xinyu Guan</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.navbar__toggle').addEventListener('click', function() {
+      var links = document.getElementById('nav-links');
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      links.classList.toggle('navbar__links--open');
+    });
+  </script>
+
+</body>
+</html>

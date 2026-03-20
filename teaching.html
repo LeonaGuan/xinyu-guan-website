@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Xinyu Guan's teaching experience in data science and English language instruction.">
+  <title>Xinyu Guan | Teaching</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__brand">Xinyu Guan</a>
+      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html" class="active">Teaching</a></li>
+        <li><a href="personal.html">Personal</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section page-header">
+      <div class="container">
+        <h1>Teaching</h1>
+        <p class="page-header__lead">
+          I am passionate about making quantitative methods accessible and empowering students to use data for meaningful inquiry.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="teaching-block">
+          <h2>Data Science Workshop</h2>
+          <p class="teaching-block__meta">
+            Graduate Teaching Assistant &middot; University of Wisconsin-Madison &middot; 2023&ndash;2025
+          </p>
+          <p>
+            Designed and instructed a data science workshop for the Wisconsin Idea Executive Ph.D. Cohort. The workshop introduced doctoral students from practitioner backgrounds to computational tools and data analysis techniques for education research, bridging the gap between applied leadership experience and quantitative inquiry.
+          </p>
+        </article>
+
+        <article class="teaching-block">
+          <h2>English Language Instruction (TESOL)</h2>
+          <p class="teaching-block__meta">
+            Cambridge Certified Teacher &middot; New Oriental Education &amp; Technology Group, China &middot; 2017&ndash;2019
+          </p>
+          <p>
+            Delivered English instruction to diverse groups of students in both classroom and individual settings. Developed differentiated instructional strategies to meet the needs of learners across varying proficiency levels, earning Cambridge TESOL certification in the process.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Teaching Philosophy</h2>
+        <blockquote class="pull-quote">
+          I believe that effective teaching begins with meeting students where they are. Whether introducing doctoral students to their first line of code or helping English learners build confidence in a new language, my approach centers on creating inclusive, supportive learning environments where curiosity drives discovery.
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__name">Xinyu Guan</p>
+      <p class="footer__affiliation">
+        Ph.D. Candidate, Educational Leadership &amp; Policy Analysis<br>
+        University of Wisconsin-Madison
+      </p>
+      <div class="footer__links">
+        <a href="mailto:xguan36@wisc.edu">Email</a>
+        <a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Xinyu Guan</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.navbar__toggle').addEventListener('click', function() {
+      var links = document.getElementById('nav-links');
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      links.classList.toggle('navbar__links--open');
+    });
+  </script>
+
+</body>
+</html>
