@@ -7,15 +7,15 @@
   <title>Xinyu Guan | Personal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=Public+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main">
     <div class="container">
       <a href="index.html" class="navbar__brand">Xinyu Guan</a>
-      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
         <span class="navbar__toggle-bar"></span>
         <span class="navbar__toggle-bar"></span>
         <span class="navbar__toggle-bar"></span>
@@ -25,14 +25,14 @@
         <li><a href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="personal.html" class="active">Personal</a></li>
+        <li><a href="personal.html" class="active" aria-current="page">Personal</a></li>
         <li><a href="cv.html">CV</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
-    <section class="section page-header">
+    <section class="page-header">
       <div class="container">
         <h1>Beyond the Research</h1>
         <p class="page-header__lead">
@@ -41,7 +41,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="feature-section">
       <div class="container">
         <div class="personal-feature">
           <div class="personal-feature__image-wrapper">
@@ -63,24 +63,23 @@
       </div>
     </section>
 
-    <section class="section section--alt">
-      <div class="container">
-        <h2>Other Interests</h2>
-        <div class="hobbies-grid">
-          <div class="hobby-card">
-            <div class="hobby-card__icon" aria-hidden="true">&#127758;</div>
-            <h3>Travel</h3>
-            <p>Having lived in China, Canada, Thailand, and the United States, I've learned that the best way to understand a place is to get lost in it &mdash; preferably with good food nearby.</p>
-          </div>
-          <div class="hobby-card">
-            <div class="hobby-card__icon" aria-hidden="true">&#128218;</div>
-            <h3>Reading</h3>
-            <p>I read education policy papers for work and novels for survival. Sometimes I accidentally cite a fictional character in conversation.</p>
-          </div>
-          <div class="hobby-card">
-            <div class="hobby-card__icon" aria-hidden="true">&#127856;</div>
-            <h3>Baking</h3>
-            <p>Flour, butter, sugar, heat &mdash; feeling like magic. Turns out measuring things precisely is a transferable skill from quantitative research.</p>
+    <section class="block">
+      <div class="container block__grid">
+        <h2 class="block__title">Other Interests</h2>
+        <div class="block__body">
+          <div class="hobbies-grid">
+            <div class="hobby-card">
+              <h3>Travel</h3>
+              <p>Having lived in China, Canada, Thailand, and the United States, I've learned that the best way to understand a place is to get lost in it &mdash; preferably with good food nearby.</p>
+            </div>
+            <div class="hobby-card">
+              <h3>Reading</h3>
+              <p>I read education policy papers for work and novels for survival. Sometimes I accidentally cite a fictional character in conversation.</p>
+            </div>
+            <div class="hobby-card">
+              <h3>Baking</h3>
+              <p>Flour, butter, sugar, heat &mdash; feeling like magic. Turns out measuring things precisely is a transferable skill from quantitative research.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -89,13 +88,15 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="footer__name">Xinyu Guan</p>
-      <p class="footer__affiliation">
-        Ph.D. Candidate, Educational Leadership &amp; Policy Analysis<br>
-        University of Wisconsin-Madison
-      </p>
+      <div>
+        <p class="footer__name">Xinyu Guan</p>
+        <p class="footer__affiliation">
+          Ph.D. Candidate, Educational Leadership and Policy Analysis<br>
+          University of Wisconsin&ndash;Madison
+        </p>
+      </div>
       <div class="footer__links">
-        <a href="mailto:xguan36@wisc.edu">Email</a>
+        <a href="mailto:xguan36@wisc.edu">xguan36@wisc.edu</a>
         <a href="https://github.com/LeonaGuan" target="_blank" rel="noopener">GitHub</a>
         <a href="https://leonaguan.github.io/bilingual-policy-tracker/" target="_blank" rel="noopener">Bilingual Policy Tracker</a>
       </div>
@@ -107,7 +108,7 @@
     document.querySelector('.navbar__toggle').addEventListener('click', function() {
       var links = document.getElementById('nav-links');
       var expanded = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', !expanded);
+      this.setAttribute('aria-expanded', String(!expanded));
       links.classList.toggle('navbar__links--open');
     });
   </script>

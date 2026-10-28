@@ -7,15 +7,15 @@
   <title>Xinyu Guan | Teaching</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=Public+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main">
     <div class="container">
       <a href="index.html" class="navbar__brand">Xinyu Guan</a>
-      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
         <span class="navbar__toggle-bar"></span>
         <span class="navbar__toggle-bar"></span>
         <span class="navbar__toggle-bar"></span>
@@ -24,7 +24,7 @@
         <li><a href="index.html">About</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
-        <li><a href="teaching.html" class="active">Teaching</a></li>
+        <li><a href="teaching.html" class="active" aria-current="page">Teaching</a></li>
         <li><a href="personal.html">Personal</a></li>
         <li><a href="cv.html">CV</a></li>
       </ul>
@@ -32,7 +32,7 @@
   </nav>
 
   <main>
-    <section class="section page-header">
+    <section class="page-header">
       <div class="container">
         <h1>Teaching</h1>
         <p class="page-header__lead">
@@ -41,49 +41,58 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <article class="teaching-block">
-          <h2>Data Science Workshop</h2>
-          <p class="teaching-block__meta">
-            Graduate Teaching Assistant &middot; University of Wisconsin-Madison &middot; 2023&ndash;2025
-          </p>
-          <p>
-            Designed and facilitated a hands-on data science workshop for the Wisconsin Idea Executive Ph.D. cohort of mid-career education practitioners. The workshop introduced these doctoral students to computational tools and data analysis techniques for education research, bridging the gap between applied leadership experience and quantitative inquiry.
-          </p>
-        </article>
+    <section class="block">
+      <div class="container block__grid">
+        <h2 class="block__title">Experience</h2>
+        <div class="block__body">
+          <article class="teaching-block">
+            <h3>Data Science Workshop</h3>
+            <p class="teaching-block__meta">
+              Graduate Teaching Assistant, University of Wisconsin&ndash;Madison
+              <span class="date">2023&ndash;2025</span>
+            </p>
+            <p>
+              Designed and facilitated a hands-on data science workshop for the Wisconsin Idea Executive Ph.D. cohort of mid-career education practitioners. The workshop introduced these doctoral students to computational tools and data analysis techniques for education research, bridging the gap between applied leadership experience and quantitative inquiry.
+            </p>
+          </article>
 
-        <article class="teaching-block">
-          <h2>English Language Instruction (TESOL)</h2>
-          <p class="teaching-block__meta">
-            Cambridge Certified Teacher &middot; New Oriental Education &amp; Technology Group, China &middot; 2017&ndash;2019
-          </p>
-          <p>
-            Delivered English instruction to diverse groups of students in both classroom and individual settings. Developed differentiated instructional strategies to meet the needs of learners across varying proficiency levels, earning Cambridge TESOL certification in the process.
-          </p>
-        </article>
+          <article class="teaching-block">
+            <h3>English Language Instruction (TESOL)</h3>
+            <p class="teaching-block__meta">
+              Cambridge Certified Teacher, New Oriental Education &amp; Technology Group, China
+              <span class="date">2017&ndash;2019</span>
+            </p>
+            <p>
+              Delivered English instruction to diverse groups of students in both classroom and individual settings. Developed differentiated instructional strategies to meet the needs of learners across varying proficiency levels, earning Cambridge TESOL certification in the process.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section section--alt">
-      <div class="container">
-        <h2>Teaching Philosophy</h2>
-        <blockquote class="pull-quote">
-          I believe that effective teaching begins with meeting students where they are. Whether introducing doctoral students to their first line of code or helping English learners build confidence in a new language, my approach centers on creating inclusive, supportive learning environments where curiosity drives discovery.
-        </blockquote>
+    <section class="block">
+      <div class="container block__grid">
+        <h2 class="block__title">Teaching Philosophy</h2>
+        <div class="block__body">
+          <blockquote class="pull-quote">
+            I believe that effective teaching begins with meeting students where they are. Whether introducing doctoral students to their first line of code or helping English learners build confidence in a new language, my approach centers on creating inclusive, supportive learning environments where curiosity drives discovery.
+          </blockquote>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p class="footer__name">Xinyu Guan</p>
-      <p class="footer__affiliation">
-        Ph.D. Candidate, Educational Leadership &amp; Policy Analysis<br>
-        University of Wisconsin-Madison
-      </p>
+      <div>
+        <p class="footer__name">Xinyu Guan</p>
+        <p class="footer__affiliation">
+          Ph.D. Candidate, Educational Leadership and Policy Analysis<br>
+          University of Wisconsin&ndash;Madison
+        </p>
+      </div>
       <div class="footer__links">
-        <a href="mailto:xguan36@wisc.edu">Email</a>
+        <a href="mailto:xguan36@wisc.edu">xguan36@wisc.edu</a>
         <a href="https://github.com/LeonaGuan" target="_blank" rel="noopener">GitHub</a>
         <a href="https://leonaguan.github.io/bilingual-policy-tracker/" target="_blank" rel="noopener">Bilingual Policy Tracker</a>
       </div>
@@ -95,7 +104,7 @@
     document.querySelector('.navbar__toggle').addEventListener('click', function() {
       var links = document.getElementById('nav-links');
       var expanded = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', !expanded);
+      this.setAttribute('aria-expanded', String(!expanded));
       links.classList.toggle('navbar__links--open');
     });
   </script>

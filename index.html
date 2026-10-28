@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Xinyu Guan — Ph.D. Candidate in Educational Leadership and Policy Analysis at UW-Madison. Research on K-12 school finance, English learner and multilingual learner policy, teacher labor markets, and quasi-experimental methods.">
+  <meta name="description" content="Xinyu Guan — Ph.D. Candidate in Educational Leadership and Policy Analysis at UW–Madison. Research on K–12 school finance, English learner and multilingual learner policy, teacher labor markets, and quasi-experimental methods.">
   <title>Xinyu Guan | About</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=Public+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main">
     <div class="container">
       <a href="index.html" class="navbar__brand">Xinyu Guan</a>
-      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
         <span class="navbar__toggle-bar"></span>
         <span class="navbar__toggle-bar"></span>
         <span class="navbar__toggle-bar"></span>
       </button>
       <ul class="navbar__links" id="nav-links">
-        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="index.html" class="active" aria-current="page">About</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="teaching.html">Teaching</a></li>
@@ -32,134 +32,144 @@
   </nav>
 
   <main>
-    <section class="hero section">
-      <div class="container hero__grid">
-        <div class="hero__image-wrapper">
+    <section class="hero">
+      <div class="container">
+        <p class="hero__question">Does school funding reach the students it is meant for?</p>
+        <div class="hero__intro">
           <img src="assets/images/selfie.jpg"
-               alt="Xinyu Guan, smiling warmly in a white blazer"
-               class="hero__image">
-        </div>
-        <div class="hero__text">
-          <h1>Xinyu Guan</h1>
-          <p class="hero__subtitle">Ph.D. Candidate in Educational Leadership &amp; Policy Analysis</p>
-          <p class="hero__affiliation">University of Wisconsin-Madison &middot; EdFund State School Finance Fellow, 2026&ndash;2027</p>
-          <p class="hero__bio">
-            I am a doctoral candidate in Educational Leadership and Policy Analysis (Policy Evaluation Track) at UW-Madison, advised by Dr. Christopher M. Salda&ntilde;a, with a Ph.D. minor in Quantitative Research Methods. My research examines K-12 school finance and resource equity, English learner and multilingual learner policy, and teacher labor markets, using quasi-experimental methods with state administrative data. My dissertation, <em>Aligning Resources with Need</em>, asks whether Wisconsin&rsquo;s school finance system turns English learner need into resources that reach students. I bring an interdisciplinary perspective informed by prior work in finance, auditing, and English language teaching across Canada, China, Thailand and the United States.
-          </p>
-          <div class="hero__cta">
-            <a href="research.html" class="btn btn--primary">My Research</a>
-            <a href="cv.html" class="btn btn--outline">View CV</a>
+               alt="Portrait of Xinyu Guan"
+               class="hero__photo" width="400" height="500">
+          <div class="hero__text">
+            <h1>Xinyu Guan</h1>
+            <p class="hero__role">
+              <span>Ph.D. Candidate, Educational Leadership and Policy Analysis</span>
+              <span>University of Wisconsin&ndash;Madison</span>
+              <span class="hero__fellow">EdFund State School Finance Fellow, <span class="nowrap">2026&ndash;2027</span></span>
+            </p>
+            <p class="hero__bio">
+              I am a doctoral candidate in Educational Leadership and Policy Analysis (Policy Evaluation Track) at UW&ndash;Madison, advised by Dr. Christopher M. Salda&ntilde;a, with a Ph.D. minor in Quantitative Research Methods. My research examines K&ndash;12 school finance and resource equity, English learner and multilingual learner policy, and teacher labor markets, using quasi-experimental methods with state administrative data. My dissertation, <em>Aligning Resources with Need</em>, asks whether Wisconsin&rsquo;s school finance system turns English learner need into resources that reach students. I bring an interdisciplinary perspective informed by prior work in finance, auditing, and English language teaching across Canada, China, Thailand and the United States.
+            </p>
+            <div class="hero__cta">
+              <a href="research.html" class="btn btn--primary">My research</a>
+              <a href="cv.html" class="btn btn--outline">View CV</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt">
-      <div class="container">
-        <h2>Research Interests</h2>
-        <div class="interests__grid interests__grid--four">
-          <div class="interest-card">
-            <h3>K-12 School Finance &amp; Resource Equity</h3>
-            <p>How states and districts raise and allocate money, and whether those resources reach the students with the greatest need.</p>
-          </div>
-          <div class="interest-card">
-            <h3>English Learner &amp; Multilingual Learner Policy</h3>
-            <p>How funding formulas, eligibility rules, and program requirements shape services for multilingual learners.</p>
-          </div>
-          <div class="interest-card">
-            <h3>Teacher Labor Markets &amp; Staffing</h3>
-            <p>Where teachers with the right preparation work, how staffing tracks student need, and what shapes who gets hired.</p>
-          </div>
-          <div class="interest-card">
-            <h3>Quasi-Experimental Methods</h3>
-            <p>Causal inference with state administrative data, including difference-in-differences, event studies, and regression discontinuity.</p>
+    <section class="block">
+      <div class="container block__grid">
+        <h2 class="block__title">Research Interests</h2>
+        <div class="block__body">
+          <div class="interests__grid interests__grid--four">
+            <div class="interest-card">
+              <h3>K&ndash;12 School Finance &amp; Resource Equity</h3>
+              <p>How states and districts raise and allocate money, and whether those resources reach the students with the greatest need.</p>
+            </div>
+            <div class="interest-card">
+              <h3>English Learner &amp; Multilingual Learner Policy</h3>
+              <p>How funding formulas, eligibility rules, and program requirements shape services for multilingual learners.</p>
+            </div>
+            <div class="interest-card">
+              <h3>Teacher Labor Markets &amp; Staffing</h3>
+              <p>Where teachers with the right preparation work, how staffing tracks student need, and what shapes who gets hired.</p>
+            </div>
+            <div class="interest-card">
+              <h3>Quasi-Experimental Methods</h3>
+              <p>Causal inference with state administrative data, including difference-in-differences, event studies, and regression discontinuity.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>Education</h2>
+    <section class="block">
+      <div class="container block__grid">
+        <h2 class="block__title">Education</h2>
+        <div class="block__body">
+          <div class="pub-entry">
+            <span class="pub-entry__year">Exp. 2027</span>
+            <p class="pub-entry__citation">
+              <strong>Ph.D., Educational Leadership and Policy Analysis</strong> (Policy Evaluation Track), University of Wisconsin&ndash;Madison<br>
+              Dissertation: <em>Aligning Resources with Need: Staffing, School Finance, and Bilingual-Bicultural Aid for English Learners in Wisconsin</em><br>
+              Advisor: Christopher M. Salda&ntilde;a<br>Committee: Francesca L&oacute;pez, Mollie McQuillan, Richard Halverson
+            </p>
+          </div>
 
-        <div class="pub-entry">
-          <span class="pub-entry__year">Exp. 2027</span>
-          <p class="pub-entry__citation">
-            <strong>Ph.D., Educational Leadership and Policy Analysis</strong> (Policy Evaluation Track), University of Wisconsin-Madison<br>
-            Dissertation: <em>Aligning Resources with Need: Staffing, School Finance, and Bilingual-Bicultural Aid for English Learners in Wisconsin</em><br>
-            Advisor: Christopher M. Salda&ntilde;a &middot; Committee: Francesca L&oacute;pez, Mollie McQuillan, Richard Halverson
-          </p>
-        </div>
+          <div class="pub-entry">
+            <span class="pub-entry__year">Completed</span>
+            <p class="pub-entry__citation">
+              <strong>Ph.D. Minor, Quantitative Research Methods</strong>, Department of Educational Psychology, University of Wisconsin&ndash;Madison<br>Minor advisor: Jee-Seon Kim
+            </p>
+          </div>
 
-        <div class="pub-entry">
-          <span class="pub-entry__year">Completed</span>
-          <p class="pub-entry__citation">
-            <strong>Ph.D. Minor, Quantitative Research Methods</strong>, Department of Educational Psychology, University of Wisconsin-Madison &middot; Minor advisor: Jee-Seon Kim
-          </p>
-        </div>
+          <div class="pub-entry">
+            <span class="pub-entry__year">2022</span>
+            <p class="pub-entry__citation">
+              <strong>M.A., Educational Leadership and Policy Analysis</strong> (Concentration: Global Higher Education), University of Wisconsin&ndash;Madison
+            </p>
+          </div>
 
-        <div class="pub-entry">
-          <span class="pub-entry__year">2022</span>
-          <p class="pub-entry__citation">
-            <strong>M.A., Educational Leadership and Policy Analysis</strong> (Concentration: Global Higher Education), University of Wisconsin-Madison
-          </p>
-        </div>
-
-        <div class="pub-entry">
-          <span class="pub-entry__year">2015</span>
-          <p class="pub-entry__citation">
-            <strong>B.A., Finance and Economics</strong>, McMaster University, Hamilton, ON
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="container">
-        <h2>Fellowships &amp; Awards</h2>
-
-        <div class="pub-entry">
-          <span class="pub-entry__year">2026&ndash;2027</span>
-          <p class="pub-entry__citation"><strong>State School Finance Fellow</strong>, EdFund (12 selected from 125+ applicants)</p>
-        </div>
-
-        <div class="pub-entry">
-          <span class="pub-entry__year">2024&ndash;2026</span>
-          <p class="pub-entry__citation"><strong>Barbara L. Jackson Scholar</strong>, University Council for Educational Administration (UCEA)</p>
-        </div>
-
-        <div class="pub-entry">
-          <span class="pub-entry__year">2026</span>
-          <p class="pub-entry__citation"><strong>Graduate Student Travel Grant</strong>, School of Education, UW-Madison</p>
-        </div>
-
-        <div class="pub-entry">
-          <span class="pub-entry__year">2024, 2025</span>
-          <p class="pub-entry__citation"><strong>Henry Ahrnsbrak Student Support Scholarship</strong>, Educational Leadership and Policy Analysis</p>
-        </div>
-
-        <div class="pub-entry">
-          <span class="pub-entry__year">2024</span>
-          <p class="pub-entry__citation"><strong>Roe L. Johns Student Travel Grant</strong>, Association for Education Finance and Policy (AEFP)</p>
-        </div>
-
-        <div class="pub-entry">
-          <span class="pub-entry__year">2022</span>
-          <p class="pub-entry__citation"><strong>Russell T. Gregg Memorial Scholarship</strong>, Educational Leadership and Policy Analysis</p>
+          <div class="pub-entry">
+            <span class="pub-entry__year">2015</span>
+            <p class="pub-entry__citation">
+              <strong>B.A., Finance and Economics</strong>, McMaster University, Hamilton, ON
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>Service &amp; Memberships</h2>
-        <div class="pub-entry">
-          <span class="pub-entry__year">Service</span>
-          <p class="pub-entry__citation">Chinese-language editor (volunteer), <em>Cultural Bridges Magazine</em>, Cultural Bridges program, Issaquah Schools Foundation, Issaquah, WA</p>
+    <section class="block">
+      <div class="container block__grid">
+        <h2 class="block__title">Fellowships &amp; Awards</h2>
+        <div class="block__body">
+          <div class="pub-entry">
+            <span class="pub-entry__year">2026&ndash;2027</span>
+            <p class="pub-entry__citation"><strong>State School Finance Fellow</strong>, EdFund (12 selected from 125+ applicants)</p>
+          </div>
+
+          <div class="pub-entry">
+            <span class="pub-entry__year">2024&ndash;2026</span>
+            <p class="pub-entry__citation"><strong>Barbara L. Jackson Scholar</strong>, University Council for Educational Administration (UCEA)</p>
+          </div>
+
+          <div class="pub-entry">
+            <span class="pub-entry__year">2026</span>
+            <p class="pub-entry__citation"><strong>Graduate Student Travel Grant</strong>, School of Education, UW&ndash;Madison</p>
+          </div>
+
+          <div class="pub-entry">
+            <span class="pub-entry__year">2024, 2025</span>
+            <p class="pub-entry__citation"><strong>Henry Ahrnsbrak Student Support Scholarship</strong>, Educational Leadership and Policy Analysis</p>
+          </div>
+
+          <div class="pub-entry">
+            <span class="pub-entry__year">2024</span>
+            <p class="pub-entry__citation"><strong>Roe L. Johns Student Travel Grant</strong>, Association for Education Finance and Policy (AEFP)</p>
+          </div>
+
+          <div class="pub-entry">
+            <span class="pub-entry__year">2022</span>
+            <p class="pub-entry__citation"><strong>Russell T. Gregg Memorial Scholarship</strong>, Educational Leadership and Policy Analysis</p>
+          </div>
         </div>
-        <div class="pub-entry">
-          <span class="pub-entry__year">Member</span>
-          <p class="pub-entry__citation">American Educational Research Association (AERA); Association for Education Finance and Policy (AEFP); University Council for Educational Administration (UCEA)</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="container block__grid">
+        <h2 class="block__title">Service &amp; Memberships</h2>
+        <div class="block__body">
+          <div class="pub-entry">
+            <span class="pub-entry__year">Service</span>
+            <p class="pub-entry__citation">Chinese-language editor (volunteer), <em>Cultural Bridges Magazine</em>, Cultural Bridges program, Issaquah Schools Foundation, Issaquah, WA</p>
+          </div>
+          <div class="pub-entry">
+            <span class="pub-entry__year">Member</span>
+            <p class="pub-entry__citation">American Educational Research Association (AERA); Association for Education Finance and Policy (AEFP); University Council for Educational Administration (UCEA)</p>
+          </div>
         </div>
       </div>
     </section>
@@ -167,13 +177,15 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="footer__name">Xinyu Guan</p>
-      <p class="footer__affiliation">
-        Ph.D. Candidate, Educational Leadership &amp; Policy Analysis<br>
-        University of Wisconsin-Madison
-      </p>
+      <div>
+        <p class="footer__name">Xinyu Guan</p>
+        <p class="footer__affiliation">
+          Ph.D. Candidate, Educational Leadership and Policy Analysis<br>
+          University of Wisconsin&ndash;Madison
+        </p>
+      </div>
       <div class="footer__links">
-        <a href="mailto:xguan36@wisc.edu">Email</a>
+        <a href="mailto:xguan36@wisc.edu">xguan36@wisc.edu</a>
         <a href="https://github.com/LeonaGuan" target="_blank" rel="noopener">GitHub</a>
         <a href="https://leonaguan.github.io/bilingual-policy-tracker/" target="_blank" rel="noopener">Bilingual Policy Tracker</a>
       </div>
@@ -185,7 +197,7 @@
     document.querySelector('.navbar__toggle').addEventListener('click', function() {
       var links = document.getElementById('nav-links');
       var expanded = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', !expanded);
+      this.setAttribute('aria-expanded', String(!expanded));
       links.classList.toggle('navbar__links--open');
     });
   </script>

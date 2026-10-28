@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Curriculum Vitae of Xinyu Guan — Ph.D. Candidate in Educational Leadership and Policy Analysis at UW-Madison.">
+  <meta name="description" content="Curriculum Vitae of Xinyu Guan — Ph.D. Candidate in Educational Leadership and Policy Analysis at UW–Madison.">
   <title>Xinyu Guan | CV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=Public+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main">
     <div class="container">
       <a href="index.html" class="navbar__brand">Xinyu Guan</a>
-      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
         <span class="navbar__toggle-bar"></span>
         <span class="navbar__toggle-bar"></span>
         <span class="navbar__toggle-bar"></span>
@@ -26,13 +26,13 @@
         <li><a href="publications.html">Publications</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="personal.html">Personal</a></li>
-        <li><a href="cv.html" class="active">CV</a></li>
+        <li><a href="cv.html" class="active" aria-current="page">CV</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
-    <section class="section page-header">
+    <section class="page-header">
       <div class="container">
         <h1>Curriculum Vitae</h1>
         <div class="cv-actions">
@@ -42,14 +42,14 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="cv-section">
       <div class="container">
         <div class="cv-embed">
           <object data="docs/CVXinyuGuan.pdf"
                   type="application/pdf"
                   width="100%"
                   height="900px">
-            <p style="padding: 2rem; text-align: center;">
+            <p>
               Your browser does not support embedded PDFs.
               <a href="docs/CVXinyuGuan.pdf">Download the CV here</a>.
             </p>
@@ -61,13 +61,15 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="footer__name">Xinyu Guan</p>
-      <p class="footer__affiliation">
-        Ph.D. Candidate, Educational Leadership &amp; Policy Analysis<br>
-        University of Wisconsin-Madison
-      </p>
+      <div>
+        <p class="footer__name">Xinyu Guan</p>
+        <p class="footer__affiliation">
+          Ph.D. Candidate, Educational Leadership and Policy Analysis<br>
+          University of Wisconsin&ndash;Madison
+        </p>
+      </div>
       <div class="footer__links">
-        <a href="mailto:xguan36@wisc.edu">Email</a>
+        <a href="mailto:xguan36@wisc.edu">xguan36@wisc.edu</a>
         <a href="https://github.com/LeonaGuan" target="_blank" rel="noopener">GitHub</a>
         <a href="https://leonaguan.github.io/bilingual-policy-tracker/" target="_blank" rel="noopener">Bilingual Policy Tracker</a>
       </div>
@@ -79,7 +81,7 @@
     document.querySelector('.navbar__toggle').addEventListener('click', function() {
       var links = document.getElementById('nav-links');
       var expanded = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', !expanded);
+      this.setAttribute('aria-expanded', String(!expanded));
       links.classList.toggle('navbar__links--open');
     });
   </script>
