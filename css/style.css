@@ -339,6 +339,10 @@ a:hover {
   color: var(--color-text-secondary);
 }
 
+.interests__grid--four {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* --- Project Cards (Research Page) --- */
 .project-card {
   background: var(--color-white);
@@ -381,6 +385,20 @@ a:hover {
 }
 
 .project-card__desc {
+  margin-bottom: 0;
+}
+
+.paper-list {
+  list-style: decimal;
+  padding-left: 1.25rem;
+  margin: var(--space-sm) 0 0;
+}
+
+.paper-list li {
+  margin-bottom: 0.6rem;
+}
+
+.paper-list li:last-child {
   margin-bottom: 0;
 }
 
